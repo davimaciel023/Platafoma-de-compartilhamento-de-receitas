@@ -1,0 +1,1 @@
+# Platafoma-de-compartilhamento-de-receitas
