@@ -4,17 +4,6 @@ Uma aplicação web para cadastrar, visualizar, editar e excluir receitas culin�
 
 ---
 
-## 📸 Preview
-
-![Preview 1](preview/Captura%20de%20tela%202025-06-12%20162406.png)
-![Preview 2](preview/Captura%20de%20tela%202025-06-12%20162424.png)
-![Preview 3](preview/Captura%20de%20tela%202025-06-12%20162439.png)
-![Preview 4](preview/Captura%20de%20tela%202025-06-12%20162518.png)
-![Preview 5](preview/Captura%20de%20tela%202025-06-12%20162533.png)
-![Preview 6](preview/Captura%20de%20tela%202025-06-12%20162547.png)
-
----
-
 ## 🚀 Funcionalidades
 
 - ✅ Listagem de receitas com filtros por nome e categoria  
