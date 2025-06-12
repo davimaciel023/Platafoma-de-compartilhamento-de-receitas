@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, NgModule } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ReceitaService } from '../../../service/receita.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cadastro',
@@ -15,7 +16,8 @@ export class CadastroComponent {
 
   constructor(
     private fb: FormBuilder,
-    private receitaService: ReceitaService
+    private receitaService: ReceitaService,
+    private router: Router
   ) {
     this.form = this.fb.group({
       nome: ['', Validators.required],
@@ -38,6 +40,8 @@ export class CadastroComponent {
       this.form.reset()
       this.imagemSelecionada = ''
     })
+
+    this.router.navigate(['/listagem'])
   }
 
   arquivoSelecionado(event: Event): void {

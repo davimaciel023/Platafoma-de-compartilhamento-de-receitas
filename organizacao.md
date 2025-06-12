@@ -3,19 +3,19 @@
 
 [x] Escolher biblioteca de estilos (Bootstrap, Angular Material, Tailwind etc.)
 
-[] Configurar o roteamento com Angular Router
+[x] Configurar o roteamento com Angular Router
 
-[] Criar estrutura de pastas organizada:
+[x] Criar estrutura de pastas organizada:
 
 ## ETAPA 2 – Backend Fake com JSON Server
-[] Instalar JSON Server globalmente
+[x] Instalar JSON Server globalmente
 
-[] Criar arquivo db.json com estrutura da receita:
+[x] Criar arquivo db.json com estrutura da receita:
 
 ## ETAPA 3 – Modelagem e Serviços
-[] Criar receita.model.ts (interface da receita)
+[x] Criar receita.model.ts (interface da receita)
 
-[] Criar receita.service.ts para consumir API (GET, POST, PUT, DELETE)
+[x] Criar receita.service.ts para consumir API (GET, POST, PUT, DELETE)
 
 ## ETAPA 4 – Componentes e Páginas
 1. Home (Listagem)
@@ -31,7 +31,7 @@
 [] Mostrar todos os dados da receita
 
 3. Cadastro de Receita
-[] Formulário com:
+[x] Formulário com:
 
   - Nome
   - Ingredientes (campo de lista)
