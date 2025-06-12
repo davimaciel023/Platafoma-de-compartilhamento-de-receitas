@@ -28,7 +28,7 @@ export class EditarComponent {
       nome: ['', Validators.required],
       ingredientes: ['', Validators.required],
       modoPreparo: ['', Validators.required],
-      tempo: ['', Validators.required],
+      tempoPreparo: ['', Validators.required],
       categoria: ['', Validators.required],
       imagem: ['']
     })

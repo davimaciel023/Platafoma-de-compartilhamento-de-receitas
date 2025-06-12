@@ -1,13 +1,20 @@
-<h2>{{ receita?.nome }}</h2>
+<div class="detalhe-container">
+  <div class="detalhe-card">
+    <img [src]="receita?.imagem" alt="Imagem da receita" />
 
-<img [src]="receita?.imagem" alt="Imagem da receita" width="200" />
+    <div class="conteudo">
+      <h1>{{ receita?.nome }}</h1>
 
-<p><strong>Categoria:</strong> {{ receita?.categoria }}</p>
-<p><strong>Tempo de Preparo:</strong> {{ receita?.tempoPreparo }}</p>
-<p><strong>Ingredientes:</strong></p>
-<pre>{{ receita?.ingredientes }}</pre>
+      <p><strong>Categoria:</strong> {{ receita?.categoria }}</p>
+      <p><strong>Tempo de Preparo:</strong> {{ receita?.tempoPreparo }}</p>
 
-<p><strong>Modo de Preparo:</strong></p>
-<p>{{ receita?.modoPreparo }}</p>
+      <h2>Ingredientes</h2>
+      <p>{{ receita?.ingredientes }}</p>
 
-<button (click)="voltar()">Voltar</button>
+      <h2>Modo de Preparo</h2>
+      <p>{{ receita?.modoPreparo }}</p>
+
+      <button (click)="voltar()">Voltar</button>
+    </div>
+  </div>
+</div>

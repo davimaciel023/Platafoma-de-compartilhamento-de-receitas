@@ -19,22 +19,23 @@
     </select>
   </div>
 
-  <div *ngFor="let receita of receitas | categoriaFiltro: categoriaSelecionadas | nomeFilter: buscarPorNome" class="card">
-    <img [src]="receita.imagem" alt="Imagem da receita" />
+  <div class="cards-container">
+    <div *ngFor="let receita of receitas | categoriaFiltro: categoriaSelecionadas | nomeFilter: buscarPorNome" class="card">
+      <img [src]="receita.imagem" alt="Imagem da receita" />
 
-    <div class="info">
-      <h3>{{ receita.nome }}</h3>
-      <p><strong>Categoria:</strong> {{ receita.categoria }}</p>
-      <p><strong>Tempo:</strong> {{ receita.tempoPreparo }}</p>
-    </div>
+      <div class="info">
+        <h3>{{ receita.nome }}</h3>
+        <p><strong>Categoria:</strong> {{ receita.categoria }}</p>
+        <p><strong>Tempo:</strong> {{ receita.tempoPreparo }}</p>
+      </div>
 
-    <div class="acoes">
-      <button (click)="verDetalhe(receita.id)">Detalhes</button>
-      <button (click)="editar(receita.id)">Editar</button>
-      <button (click)="deletar(receita.id)">Excluir</button>
+      <div class="acoes">
+        <button (click)="verDetalhe(receita.id)">Detalhes</button>
+        <button (click)="editar(receita.id)">Editar</button>
+        <button (click)="deletar(receita.id)">Excluir</button>
+      </div>
     </div>
   </div>
 
   <button class="botao-flutuante" (click)="cadastrar()" title="Cadastrar nova receita">+</button>
-
 </div>

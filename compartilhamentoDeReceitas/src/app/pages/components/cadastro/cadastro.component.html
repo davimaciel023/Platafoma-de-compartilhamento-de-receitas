@@ -1,34 +1,32 @@
-<div class="container">
-  <h2>Cadastrar <span>Receita</span></h2>
-
-  <form [formGroup]="form" (ngSubmit)="salvar()" class="form-receita">
-
-    <label>Nome da Receita</label>
-    <input type="text" formControlName="nome" />
+<div class="editar">
+  <h2>Cadastrar Receita</h2>
+  <form [formGroup]="form" (ngSubmit)="salvar()">
+    <label for="nome">Nome da Receita</label>
+    <input id="nome" type="text" formControlName="nome" placeholder="Digite o nome da receita" />
     <div class="erro" *ngIf="campoInvalido('nome')">
-      O nome da receita é obrigatória
+      Nome da receita é obrigatória
     </div>
 
-    <label>Ingredientes (separados por vírgula)</label>
-    <textarea formControlName="ingredientes"></textarea>
+    <label for="ingredientes">Lista de Ingredientes</label>
+    <textarea id="ingredientes" formControlName="ingredientes" placeholder="Digite os ingredientes separados por vírgula"></textarea>
     <div class="erro" *ngIf="campoInvalido('ingredientes')">
-      Os ingredientes são obrigatórios
+      Os ingredientes são obrigatório
     </div>
 
-    <label>Modo de Preparo</label>
-    <textarea formControlName="modoPreparo"></textarea>
+    <label for="modoPreparo">Modo de Preparo</label>
+    <textarea id="modoPreparo" formControlName="modoPreparo" placeholder="Descreva o modo de preparo"></textarea>
     <div class="erro" *ngIf="campoInvalido('modoPreparo')">
-      Obrigatório
+      Modo de preparo é obrigatório
     </div>
 
-    <label>Tempo de Preparo</label>
-    <input type="text" formControlName="tempoPreparo" />
+    <label for="tempoPreparo">Tempo de Preparo</label>
+    <input id="tempo" type="text" formControlName="tempoPreparo" placeholder="Ex: 30 minutos" />
     <div class="erro" *ngIf="campoInvalido('tempoPreparo')">
       Informe o tempo em um formato válido, ex: "30min", "1h", "1 hora e 15 minutos".
     </div>
 
 
-    <label>Categoria</label>
+    <label for="categoria">Categoria</label>
     <select formControlName="categoria">
       <option value="">Selecione uma categoria</option>
       <option value="doce">Doce</option>
@@ -42,20 +40,21 @@
       <option value="lanche">Lanche</option>
       <option value="café da manhã">Café da Manhã</option>
     </select>
-
     <div class="erro" *ngIf="campoInvalido('categoria')">
-      Selecione uma categoria
+      Categoria obrigatória
     </div>
 
-    <label>Imagem da Receita</label>
-    <input type="file" (change)="arquivoSelecionado($event)" />
+    <div class="campo-form">
+      <label>Imagem:</label>
+      <input type="file" (change)="arquivoSelecionado($event)" />
+    </div>
 
-
-    <img *ngIf="imagemSelecionada" [src]="imagemSelecionada" alt="Prévia da imagem" class="preview-img" />
-
-    <div class="btn">
-      <button type="submit" (click)="cadastrar()">Salvar Receita</button>
-      <button (click)="cancelar()">Cancelar</button>
+    <div class="form-actions">
+      <button type="submit" class="save">Salvar</button>
+      <button type="button" class="cancel" (click)="cancelar()">Cancelar</button>
     </div>
   </form>
 </div>
+
+
+
