@@ -6,12 +6,6 @@ Uma aplicação web para cadastrar, visualizar, editar e excluir receitas culin�
 
 ## 📸 Preview
 
-![Preview da Aplicação]("/preview/Captura de tela 2025-06-12 162406.png")
-![Preview da Aplicação]("/preview/Captura de tela 2025-06-12 162424.png")
-![Preview da Aplicação]("/preview/Captura de tela 2025-06-12 162439.png")
-![Preview da Aplicação]("/preview/Captura de tela 2025-06-12 162518.png")
-![Preview da Aplicação]("/preview/Captura de tela 2025-06-12 162533.png")
-![Preview da Aplicação]("/preview/Captura de tela 2025-06-12 162547.png")
 ---
 
 ## 🚀 Funcionalidades
@@ -32,4 +26,19 @@ Uma aplicação web para cadastrar, visualizar, editar e excluir receitas culin�
 - [JSON Server] 
 
 ---
+
+## 🛠️ Como Rodar o Projeto
+🔧 Pré-requisitos
+Antes de tudo, você precisa ter instalado na sua máquina:
+
+- Node.js (versão recomendada: LTS, 18+)
+
+- Angular CLI
+
+Rode no terminal: 
+- npm install -g @angular/cli (caso não tenha o angular)
+
+  1. Clonar o repositório
+       - git clone https://github.com/seu-usuario/seu-repositorio.git
+       - cd seu-repositorio
 
