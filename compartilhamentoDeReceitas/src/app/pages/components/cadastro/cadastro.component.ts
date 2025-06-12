@@ -58,4 +58,8 @@ export class CadastroComponent {
     }
   }
 
+  cancelar(){
+    this.router.navigate(['/listagem'])
+  }
+
 }

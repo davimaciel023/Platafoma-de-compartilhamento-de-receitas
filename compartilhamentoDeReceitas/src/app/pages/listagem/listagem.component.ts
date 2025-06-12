@@ -45,4 +45,8 @@ export class ListagemComponent {
       })
     }
   }
+
+  cadastrar() {
+    this.router.navigate(['/cadastroReceita'])
+  }
 }
