@@ -24,21 +24,32 @@
     <label>Tempo de Preparo</label>
     <input type="text" formControlName="tempo" />
     <div class="erro" *ngIf="campoInvalido('tempoPreparo')">
-      Obrigatório
+      Informe o tempo em um formato válido, ex: "30min", "1h", "1 hora e 15 minutos".
     </div>
+
 
     <label>Categoria</label>
     <select formControlName="categoria">
+      <option value="">Selecione uma categoria</option>
       <option value="doce">Doce</option>
       <option value="salgado">Salgado</option>
       <option value="bebida">Bebida</option>
+      <option value="sobremesa">Sobremesa</option>
+      <option value="massa">Massa</option>
+      <option value="carne">Carne</option>
+      <option value="vegano">Vegano</option>
+      <option value="fitness">Fitness</option>
+      <option value="lanche">Lanche</option>
+      <option value="café da manhã">Café da Manhã</option>
     </select>
+
     <div class="erro" *ngIf="campoInvalido('categoria')">
       Selecione uma categoria
     </div>
 
     <label>Imagem da Receita</label>
     <input type="file" (change)="arquivoSelecionado($event)" />
+
 
     <img *ngIf="imagemSelecionada" [src]="imagemSelecionada" alt="Prévia da imagem" class="preview-img" />
 

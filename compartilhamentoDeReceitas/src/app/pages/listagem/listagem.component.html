@@ -4,18 +4,22 @@
   <div class="filtros">
     <input type="text" [(ngModel)]="buscarPorNome" placeholder="Buscar por nome..." />
 
-    <select [(ngModel)]="categoriaSelecionadas">
-      <option value="">Todas as categorias</option>
+    <select formControlName="categoria">
+      <option value="">Selecione uma categoria</option>
       <option value="doce">Doce</option>
       <option value="salgado">Salgado</option>
       <option value="bebida">Bebida</option>
+      <option value="sobremesa">Sobremesa</option>
+      <option value="massa">Massa</option>
+      <option value="carne">Carne</option>
+      <option value="vegano">Vegano</option>
+      <option value="fitness">Fitness</option>
+      <option value="lanche">Lanche</option>
+      <option value="café da manhã">Café da Manhã</option>
     </select>
   </div>
 
-  <div
-    *ngFor="let receita of receitas | categoriaFiltro: categoriaSelecionadas | nomeFilter: buscarPorNome"
-    class="card"
-  >
+  <div *ngFor="let receita of receitas | categoriaFiltro: categoriaSelecionadas | nomeFilter: buscarPorNome" class="card">
     <img [src]="receita.imagem" alt="Imagem da receita" />
 
     <div class="info">
