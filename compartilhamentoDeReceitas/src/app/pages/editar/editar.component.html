@@ -1,40 +1,45 @@
-<h2>Editar Receita</h2>
+<div class="edit-recipe-container">
+  <h2>Editar Receita</h2>
+  <form [formGroup]="form" (ngSubmit)="salvar()">
+    <label for="nome">Nome da Receita</label>
+    <input id="nome" type="text" formControlName="nome" placeholder="Digite o nome da receita" />
 
-<form [formGroup]="form" (ngSubmit)="salvar()">
-  <div class="campo-form">
-    <label>Nome:</label>
-    <input type="text" formControlName="nome" />
-  </div>
+    <label for="ingredientes">Lista de Ingredientes</label>
+    <textarea id="ingredientes" formControlName="ingredientes" placeholder="Digite os ingredientes separados por vírgula"></textarea>
 
-  <div class="campo-form">
-    <label>Ingredientes:</label>
-    <textarea formControlName="ingredientes"></textarea>
-  </div>
+    <label for="modoPreparo">Modo de Preparo</label>
+    <textarea id="modoPreparo" formControlName="modoPreparo" placeholder="Descreva o modo de preparo"></textarea>
 
-  <div class="campo-form">
-    <label>Modo de Preparo:</label>
-    <textarea formControlName="modoPreparo"></textarea>
-  </div>
+    <label for="tempoPreparo">Tempo de Preparo</label>
+    <input id="tempo" type="text" formControlName="tempoPreparo" placeholder="Ex: 30 minutos" />
 
-  <div class="campo-form">
-    <label>Tempo de Preparo:</label>
-    <input type="text" formControlName="tempo" />
-  </div>
-
-  <div class="campo-form">
-    <label>Categoria:</label>
+    <label for="categoria">Categoria</label>
     <select formControlName="categoria">
-      <option value="Doce">Doce</option>
-      <option value="Salgado">Salgado</option>
-      <option value="Bebida">Bebida</option>
+      <option value="">Selecione uma categoria</option>
+      <option value="doce">Doce</option>
+      <option value="salgado">Salgado</option>
+      <option value="bebida">Bebida</option>
+      <option value="sobremesa">Sobremesa</option>
+      <option value="massa">Massa</option>
+      <option value="carne">Carne</option>
+      <option value="vegano">Vegano</option>
+      <option value="fitness">Fitness</option>
+      <option value="lanche">Lanche</option>
+      <option value="café da manhã">Café da Manhã</option>
     </select>
-  </div>
 
-  <div class="campo-form">
-    <label>Imagem:</label>
-    <input type="file" (change)="arquivoSelecionar($event)" />
-    <img *ngIf="selecionarImagem" [src]="selecionarImagem" width="150" />
-  </div>
+    <div class="campo-form">
+      <label>Imagem:</label>
+      <input type="file" (change)="arquivoSelecionar($event)" />
+      <img *ngIf="selecionarImagem" [src]="selecionarImagem" width="150" />
+    </div>
 
-  <button type="submit">Salvar</button>
-</form>
+    <div class="form-actions">
+      <button type="submit" class="save">Salvar</button>
+      <button type="button" class="cancel" (click)="cancelar()">Cancelar</button>
+    </div>
+  </form>
+</div>
+
+
+

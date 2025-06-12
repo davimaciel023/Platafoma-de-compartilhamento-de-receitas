@@ -4,8 +4,8 @@
   <div class="filtros">
     <input type="text" [(ngModel)]="buscarPorNome" placeholder="Buscar por nome..." />
 
-    <select formControlName="categoria">
-      <option value="">Selecione uma categoria</option>
+    <select [(ngModel)]="categoriaSelecionadas">
+      <option value="">Todas as categorias</option>
       <option value="doce">Doce</option>
       <option value="salgado">Salgado</option>
       <option value="bebida">Bebida</option>

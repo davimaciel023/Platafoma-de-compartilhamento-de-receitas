@@ -1,13 +1,13 @@
 {
   "receitas": [
     {
-      "id": "7305",
       "nome": "Bolo de Cenoura",
       "ingredientes": "cenoura, ovos, óleo, açúcar, farinha de trigo, fermento",
       "modoPreparo": "Bata os ingredientes, asse por 40 minutos.",
-      "tempoPreparo": "",
+      "tempo": "",
       "categoria": "doce",
-      "imagem": ""
+      "imagem": "",
+      "id": "7305"
     },
     {
       "id": "016b",

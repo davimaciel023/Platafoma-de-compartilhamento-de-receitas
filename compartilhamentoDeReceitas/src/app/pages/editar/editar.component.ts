@@ -29,7 +29,8 @@ export class EditarComponent {
       ingredientes: ['', Validators.required],
       modoPreparo: ['', Validators.required],
       tempo: ['', Validators.required],
-      categoria: ['', Validators.required]
+      categoria: ['', Validators.required],
+      imagem: ['']
     })
 
     this.receitaService.pegarPorId(this.id).subscribe(receita => {
@@ -60,5 +61,9 @@ export class EditarComponent {
       alert(`Receita atualizada com sucesso!`)
       this.router.navigate(['/listagem'])
     })
+  }
+
+  cancelar() {
+    this.router.navigate(['/listagem'])
   }
 }
