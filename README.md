@@ -39,6 +39,18 @@ Rode no terminal:
 - npm install -g @angular/cli (caso não tenha o angular)
 
   1. Clonar o repositório
-       - git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/davimaciel023/Platafoma-de-compartilhamento-de-receitas.git)
-       - cd seu-repositorio
+       - git clone [Repositório](https://github.com/davimaciel023/Platafoma-de-compartilhamento-de-receitas.git)
+       - cd plataforma-de-compartilhamento-de-receitas
+  2. Instalar as dependências
+     Dentro da pasta do projeto, rode:
+     - npm install
+       
 
+  3. Rodar o projeto localmente
+     Execute o comando abaixo para iniciar o servidor de desenvolvimento:
+     - ng serve
+    
+  4. Rode o Backend
+     Execute o comando abaixo:
+     - cd backend/
+     - npm start
