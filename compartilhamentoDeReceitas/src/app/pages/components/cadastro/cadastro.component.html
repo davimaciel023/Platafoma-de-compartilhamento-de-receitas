@@ -1,36 +1,42 @@
 <section>
   <h1>Cadastrar Receita</h1>
 
-  <form action="">
+  <form [formGroup]="form" (ngSubmit)="salvar()">
     <div class="campo-form">
-      <label for="">Nome da Receita</label>
-      <input type="text" name="receita" id="">
+      <label for="nome">Nome da Receita</label>
+      <input type="text" formControlName="nome">
     </div>
+
     <div class="campo-form">
-      <label for="">Lista de Ingredientes</label>
-      <input type="text" name="ingredientes" id="">
+      <label for="ingredientes">Lista de Ingredientes</label>
+      <textarea formControlName="ingredientes"></textarea>
     </div>
+
     <div class="campo-form">
-      <label for="">Modo de Preparo</label>
-      <textarea name="Modo de preparo" id=""></textarea>
+      <label for="modoPreparo">Modo de Preparo</label>
+      <textarea formControlName="modoPreparo"></textarea>
     </div>
+
     <div class="campo-form">
-      <label for="">Tempo de Preparo</label>
-      <input type="text" name="" id="">
+      <label for="tempoPreparo">Tempo de Preparo</label>
+      <input type="text" formControlName="tempoPreparo">
     </div>
+
     <div class="campo-form">
-      <label for="">Categoria</label>
-      <select id="categoria">
+      <label for="categoria">Categoria</label>
+      <select id="categoria" formControlName="categoria">
         <option value="">Selecione</option>
         <option value="doce">Doce</option>
         <option value="salgado">Salgado</option>
         <option value="bebida">Bebida</option>
       </select>
     </div>
+
     <div class="campo-form">
       <label for="">URL da imagem</label>
-      <input type="image" name="" id="">
+      <input type="file" id="imagem" (change)="arquivoSelecionado($event)">
     </div>
 
+    <button type="submit">Salvar Receita</button>
   </form>
 </section>
