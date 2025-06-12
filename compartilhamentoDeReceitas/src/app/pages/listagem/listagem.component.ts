@@ -5,10 +5,11 @@ import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CategoriaFiltroPipe } from '../../pipe/categoria-filtro.pipe';
+import { NomeFilterPipe } from '../../pipe/nome/nome-filtro.pipe';
 
 @Component({
   selector: 'app-listagem',
-  imports: [CommonModule, FormsModule, CategoriaFiltroPipe],
+  imports: [CommonModule, FormsModule, CategoriaFiltroPipe, NomeFilterPipe],
   templateUrl: './listagem.component.html',
   styleUrl: './listagem.component.scss'
 })
@@ -16,6 +17,7 @@ export class ListagemComponent {
 
   receitas: Receita[] = []
   categoriaSelecionadas: string = ''
+  buscarPorNome: string = ''
 
   constructor(
     private receitaService: ReceitaService,

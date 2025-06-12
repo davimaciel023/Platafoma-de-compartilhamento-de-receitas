@@ -21,14 +21,14 @@
 1. Home (Listagem)
 [x] Mostrar cards com imagem + nome
 
-[] Filtro por categoria
+[x] Filtro por categoria
 
-[] Campo de busca por nome
+[x] Campo de busca por nome
 
 2. Detalhe da Receita
 [x] Rota com :id
 
-[] Mostrar todos os dados da receita
+[x] Mostrar todos os dados da receita
 
 3. Cadastro de Receita
 [x] Formulário com:

@@ -1,15 +1,21 @@
 <h2>Receitas</h2>
 
-<label for="filtroCategoria">Filtrar por categoria:</label>
-<select id="filtroCategoria" [(ngModel)]="categoriaSelecionadas">
-  <option value="">Todas</option>
-  <option value="doce">Doce</option>
-  <option value="salgado">Salgado</option>
-  <option value="bebida">Bebida</option>
-</select>
+<div class="pesquisas">
+  <label for="filtroCategoria">Filtrar por categoria:</label>
+  <select id="filtroCategoria" [(ngModel)]="categoriaSelecionadas">
+    <option value="">Todas</option>
+    <option value="doce">Doce</option>
+    <option value="salgado">Salgado</option>
+    <option value="bebida">Bebida</option>
+  </select>
+
+  <label for="buscaNome">Buscar por nome:</label>
+  <input id="buscaNome" type="text" [(ngModel)]="buscarPorNome" placeholder="Digite o nome da receita" />
+
+</div>
 
 
-<div *ngFor="let receita of receitas | categoriaFiltro: categoriaSelecionadas">
+<div *ngFor="let receita of receitas | categoriaFiltro: categoriaSelecionadas | nomeFilter: buscarPorNome">
   <img [src]="receita.imagem" alt="Imagem da receita" width="100">
   <h3>{{ receita.nome }}</h3>
   <p><strong>Categoria:</strong> {{receita.categoria}}</p>

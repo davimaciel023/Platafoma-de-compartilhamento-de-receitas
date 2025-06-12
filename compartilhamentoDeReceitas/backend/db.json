@@ -10,31 +10,13 @@
       "id": "86c4"
     },
     {
-      "nome": "12412",
+      "nome": "das",
       "ingredientes": "",
       "modoPreparo": "",
       "tempo": "",
-      "categoria": "salgado",
+      "categoria": "Salgado",
       "imagem": "",
-      "id": "1771"
-    },
-    {
-      "id": "416a",
-      "nome": "41",
-      "ingredientes": "",
-      "modoPreparo": "",
-      "tempoPreparo": "",
-      "categoria": "bebida",
-      "imagem": ""
-    },
-    {
-      "id": "f7eb",
-      "nome": "411",
-      "ingredientes": "",
-      "modoPreparo": "",
-      "tempoPreparo": "",
-      "categoria": "doce",
-      "imagem": ""
+      "id": "e883"
     }
   ]
 }
