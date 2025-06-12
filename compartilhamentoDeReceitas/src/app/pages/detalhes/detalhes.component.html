@@ -1,1 +1,13 @@
-<p>detalhes works!</p>
+<h2>{{ receita?.nome }}</h2>
+
+<img [src]="receita?.imagem" alt="Imagem da receita" width="200" />
+
+<p><strong>Categoria:</strong> {{ receita?.categoria }}</p>
+<p><strong>Tempo de Preparo:</strong> {{ receita?.tempoPreparo }}</p>
+<p><strong>Ingredientes:</strong></p>
+<pre>{{ receita?.ingredientes }}</pre>
+
+<p><strong>Modo de Preparo:</strong></p>
+<p>{{ receita?.modoPreparo }}</p>
+
+<button (click)="voltar()">Voltar</button>

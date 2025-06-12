@@ -1,6 +1,15 @@
 <h2>Receitas</h2>
 
-<div *ngFor="let receita of receitas">
+<label for="filtroCategoria">Filtrar por categoria:</label>
+<select id="filtroCategoria" [(ngModel)]="categoriaSelecionadas">
+  <option value="">Todas</option>
+  <option value="doce">Doce</option>
+  <option value="salgado">Salgado</option>
+  <option value="bebida">Bebida</option>
+</select>
+
+
+<div *ngFor="let receita of receitas | categoriaFiltro: categoriaSelecionadas">
   <img [src]="receita.imagem" alt="Imagem da receita" width="100">
   <h3>{{ receita.nome }}</h3>
   <p><strong>Categoria:</strong> {{receita.categoria}}</p>

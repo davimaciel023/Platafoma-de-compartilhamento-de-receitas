@@ -19,14 +19,14 @@
 
 ## ETAPA 4 – Componentes e Páginas
 1. Home (Listagem)
-[] Mostrar cards com imagem + nome
+[x] Mostrar cards com imagem + nome
 
 [] Filtro por categoria
 
 [] Campo de busca por nome
 
 2. Detalhe da Receita
-[] Rota com :id
+[x] Rota com :id
 
 [] Mostrar todos os dados da receita
 
@@ -41,12 +41,12 @@
   - Imagem (URL ou upload)
 
 4. Edição de Receita
-[] Formulário com os dados preenchidos
+[x] Formulário com os dados preenchidos
 
-[] Reutilizar componente do cadastro
+[x] Reutilizar componente do cadastro
 
 5. Exclusão de Receita
-[] Botão de excluir com confirm('Deseja excluir?')
+[x] Botão de excluir com confirm('Deseja excluir?')
 
 ## ETAPA 5 – Diferenciais (Plus)
 [] Dark Mode (com botão para alternar tema)

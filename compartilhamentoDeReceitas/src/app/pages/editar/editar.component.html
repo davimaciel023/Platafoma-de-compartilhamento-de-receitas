@@ -1,1 +1,40 @@
-<p>editar works!</p>
+<h2>Editar Receita</h2>
+
+<form [formGroup]="form" (ngSubmit)="salvar()">
+  <div class="campo-form">
+    <label>Nome:</label>
+    <input type="text" formControlName="nome" />
+  </div>
+
+  <div class="campo-form">
+    <label>Ingredientes:</label>
+    <textarea formControlName="ingredientes"></textarea>
+  </div>
+
+  <div class="campo-form">
+    <label>Modo de Preparo:</label>
+    <textarea formControlName="modoPreparo"></textarea>
+  </div>
+
+  <div class="campo-form">
+    <label>Tempo de Preparo:</label>
+    <input type="text" formControlName="tempo" />
+  </div>
+
+  <div class="campo-form">
+    <label>Categoria:</label>
+    <select formControlName="categoria">
+      <option value="Doce">Doce</option>
+      <option value="Salgado">Salgado</option>
+      <option value="Bebida">Bebida</option>
+    </select>
+  </div>
+
+  <div class="campo-form">
+    <label>Imagem:</label>
+    <input type="file" (change)="arquivoSelecionar($event)" />
+    <img *ngIf="selecionarImagem" [src]="selecionarImagem" width="150" />
+  </div>
+
+  <button type="submit">Salvar</button>
+</form>

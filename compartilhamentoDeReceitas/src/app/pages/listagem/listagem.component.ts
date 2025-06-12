@@ -3,16 +3,19 @@ import { Receita } from '../../models/receita.model';
 import { ReceitaService } from '../../service/receita.service';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { CategoriaFiltroPipe } from '../../pipe/categoria-filtro.pipe';
 
 @Component({
   selector: 'app-listagem',
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule, CategoriaFiltroPipe],
   templateUrl: './listagem.component.html',
   styleUrl: './listagem.component.scss'
 })
 export class ListagemComponent {
 
   receitas: Receita[] = []
+  categoriaSelecionadas: string = ''
 
   constructor(
     private receitaService: ReceitaService,
