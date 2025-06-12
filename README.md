@@ -81,3 +81,6 @@ Por padrão, o JSON Server roda em:
 ```
 http://localhost:3000
 ```
+
+## Video Demostrativo
+- [YouTube](https://youtu.be/U-UtvxK6EmY)
