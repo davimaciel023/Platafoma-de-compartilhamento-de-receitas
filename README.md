@@ -41,14 +41,16 @@ Rode no terminal:
   1. Clonar o repositório
        - git clone [Repositório](https://github.com/davimaciel023/Platafoma-de-compartilhamento-de-receitas.git)
        - cd plataforma-de-compartilhamento-de-receitas
-  2. Instalar as dependências
+  2. Instalar as dependências:
      Dentro da pasta do projeto, rode:
      - npm install
        
 
-  3. Rodar o projeto localmente
+  3. Rodar o projeto localmente:
      Execute o comando abaixo para iniciar o servidor de desenvolvimento:
      - ng serve
+     O Angular irá compilar o projeto e iniciar um servidor local. Acesse no navegador:
+http://localhost:4200
     
   4. Rode o Backend
      Execute o comando abaixo:
