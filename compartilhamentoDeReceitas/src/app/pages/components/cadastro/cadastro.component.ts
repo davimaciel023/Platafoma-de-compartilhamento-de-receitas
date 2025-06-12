@@ -58,8 +58,20 @@ export class CadastroComponent {
     }
   }
 
+  cadastrar(){
+    if(this.form.valid) {
+      this.router.navigate(['/listagem'])
+    } else {
+      alert(`Os campos estão incorretos`)
+    }
+  }
+
   cancelar(){
     this.router.navigate(['/listagem'])
   }
+
+  campoInvalido(campo: string): boolean {
+  return this.form.get(campo)?.invalid && this.form.get(campo)?.touched || false;
+}
 
 }

@@ -1,45 +1,50 @@
-<section>
-  <h1>Cadastrar <span>Receita</span></h1>
+<div class="container">
+  <h2>Cadastrar <span>Receita</span></h2>
 
-  <form [formGroup]="form" (ngSubmit)="salvar()">
-    <div class="campo-form">
-      <label for="nome">Nome da Receita</label>
-      <input type="text" formControlName="nome">
+  <form [formGroup]="form" (ngSubmit)="salvar()" class="form-receita">
+
+    <label>Nome da Receita</label>
+    <input type="text" formControlName="nome" />
+    <div class="erro" *ngIf="campoInvalido('nome')">
+      O nome da receita é obrigatória
     </div>
 
-    <div class="campo-form">
-      <label for="ingredientes">Lista de Ingredientes</label>
-      <textarea formControlName="ingredientes"></textarea>
+    <label>Ingredientes (separados por vírgula)</label>
+    <textarea formControlName="ingredientes"></textarea>
+    <div class="erro" *ngIf="campoInvalido('ingredientes')">
+      Os ingredientes são obrigatórios
     </div>
 
-    <div class="campo-form">
-      <label for="modoPreparo">Modo de Preparo</label>
-      <textarea formControlName="modoPreparo"></textarea>
+    <label>Modo de Preparo</label>
+    <textarea formControlName="modoPreparo"></textarea>
+    <div class="erro" *ngIf="campoInvalido('modoPreparo')">
+      Obrigatório
     </div>
 
-    <div class="campo-form">
-      <label for="tempoPreparo">Tempo de Preparo</label>
-      <input type="text" formControlName="tempoPreparo">
+    <label>Tempo de Preparo</label>
+    <input type="text" formControlName="tempo" />
+    <div class="erro" *ngIf="campoInvalido('tempoPreparo')">
+      Obrigatório
     </div>
 
-    <div class="campo-form">
-      <label for="categoria">Categoria</label>
-      <select id="categoria" formControlName="categoria">
-        <option value="">Selecione</option>
-        <option value="doce">Doce</option>
-        <option value="salgado">Salgado</option>
-        <option value="bebida">Bebida</option>
-      </select>
+    <label>Categoria</label>
+    <select formControlName="categoria">
+      <option value="doce">Doce</option>
+      <option value="salgado">Salgado</option>
+      <option value="bebida">Bebida</option>
+    </select>
+    <div class="erro" *ngIf="campoInvalido('categoria')">
+      Selecione uma categoria
     </div>
 
-    <div class="campo-form">
-      <label for="">URL da imagem</label>
-      <input type="file" id="imagem" (change)="arquivoSelecionado($event)">
-    </div>
+    <label>Imagem da Receita</label>
+    <input type="file" (change)="arquivoSelecionado($event)" />
+
+    <img *ngIf="imagemSelecionada" [src]="imagemSelecionada" alt="Prévia da imagem" class="preview-img" />
 
     <div class="btn">
-      <button type="submit">Salvar Receita</button>
+      <button type="submit" (click)="cadastrar()">Salvar Receita</button>
       <button (click)="cancelar()">Cancelar</button>
     </div>
   </form>
-</section>
+</div>
