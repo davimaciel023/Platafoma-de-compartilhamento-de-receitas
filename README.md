@@ -6,12 +6,12 @@ Uma aplicação web para cadastrar, visualizar, editar e excluir receitas culin�
 
 ## 📸 Preview
 
-<img src="/assets/src/preview/Captura de tela 2025-06-12 162406.png" width="400"/>
-<img src="/assets/src/preview/Captura de tela 2025-06-12 162424.png" width="400"/>
-<img src="/assets/src/preview/Captura de tela 2025-06-12 162439.png" width="400"/>
-<img src="/assets/src/preview/Captura de tela 2025-06-12 162518.png" width="400"/>
-<img src="/assets/src/preview/Captura de tela 2025-06-12 162533.png" width="400"/>
-<img src="/assets/src/preview/Captura de tela 2025-06-12 162547.png" width="400"/>
+![Preview 1](preview/Captura%20de%20tela%202025-06-12%20162406.png)
+![Preview 2](preview/Captura%20de%20tela%202025-06-12%20162424.png)
+![Preview 3](preview/Captura%20de%20tela%202025-06-12%20162439.png)
+![Preview 4](preview/Captura%20de%20tela%202025-06-12%20162518.png)
+![Preview 5](preview/Captura%20de%20tela%202025-06-12%20162533.png)
+![Preview 6](preview/Captura%20de%20tela%202025-06-12%20162547.png)
 
 ---
 
