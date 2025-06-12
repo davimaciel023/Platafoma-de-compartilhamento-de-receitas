@@ -39,6 +39,6 @@ Rode no terminal:
 - npm install -g @angular/cli (caso não tenha o angular)
 
   1. Clonar o repositório
-       - git clone https://github.com/seu-usuario/seu-repositorio.git
+       - git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/davimaciel023/Platafoma-de-compartilhamento-de-receitas.git)
        - cd seu-repositorio
 
