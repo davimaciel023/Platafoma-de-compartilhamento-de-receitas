@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --cor-primaria: #F77F00;
+  --cor-secundaria: #D62828;
+  --fundo: #FFF8F0;
+  --texto: #333333;
+  --card: #E6CCB2;
+  --destaque: #F4A261;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--fundo);
+  color: var(--texto);
+  font-family: 'Segoe UI', sans-serif;
+}
