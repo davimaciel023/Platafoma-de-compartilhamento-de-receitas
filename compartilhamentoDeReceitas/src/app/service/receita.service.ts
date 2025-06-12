@@ -15,7 +15,7 @@ export class ReceitaService {
     return this.http.get<Receita[]>(this.API_URL);
   }
 
-  pegarPorId(id: number): Observable<Receita> {
+  pegarPorId(id: string): Observable<Receita> {
     return this.http.get<Receita>(`${this.API_URL}/${id}`);
   }
 
@@ -23,11 +23,11 @@ export class ReceitaService {
     return this.http.post<Receita>(this.API_URL, receita);
   }
 
-  atualizar(id: number, receita: Receita): Observable<Receita> {
+  atualizar(id: string, receita: Receita): Observable<Receita> {
     return this.http.put<Receita>(`${this.API_URL}/${id}`, receita);
   }
 
-  deletar(id: number): Observable<void> {
+  deletar(id: string): Observable<void> {
     return this.http.delete<void>(`${this.API_URL}/${id}`);
   }
 }

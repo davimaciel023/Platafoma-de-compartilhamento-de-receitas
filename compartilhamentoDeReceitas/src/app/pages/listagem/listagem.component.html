@@ -1,5 +1,12 @@
-<section>
-  <div class="card">
+<h2>Receitas</h2>
 
-  </div>
-</section>
+<div *ngFor="let receita of receitas">
+  <img [src]="receita.imagem" alt="Imagem da receita" width="100">
+  <h3>{{ receita.nome }}</h3>
+  <p><strong>Categoria:</strong> {{receita.categoria}}</p>
+  <p><strong>Tempo:</strong> {{receita.tempoPreparo}}</p>
+
+  <button (click)="verDetalhe(receita.id)">Detalhes</button>
+  <button (click)="editar(receita.id)">Editar</button>
+  <button (click)="deletar(receita.id)">Excluir</button>
+</div>

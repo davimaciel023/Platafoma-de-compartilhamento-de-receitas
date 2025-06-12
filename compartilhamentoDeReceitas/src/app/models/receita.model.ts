@@ -1,9 +1,9 @@
 export interface Receita {
-  id?: string;
+  id: string;
   nome: string;
   ingredientes: string;
   modoPreparo: string;
   tempoPreparo: string;
   categoria: string;
-
+  imagem: string
 }
