@@ -49,10 +49,11 @@ Rode no terminal:
   3. Rodar o projeto localmente:
      Execute o comando abaixo para iniciar o servidor de desenvolvimento:
      - ng serve
-     O Angular irá compilar o projeto e iniciar um servidor local. Acesse no navegador:
+     
+  4. O Angular irá compilar o projeto e iniciar um servidor local. Acesse no navegador:
 http://localhost:4200
     
-  4. Rode o Backend
+  5. Rode o Backend
      Execute o comando abaixo:
      - cd backend/
      - npm start
