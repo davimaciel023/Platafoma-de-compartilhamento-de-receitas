@@ -30,7 +30,7 @@ export class ListagemComponent {
   }
 
   editar(id: string) {
-    this.router.navigate(['/detalhe', id])
+    this.router.navigate(['/editar', id])
   }
 
   deletar(id: string){
