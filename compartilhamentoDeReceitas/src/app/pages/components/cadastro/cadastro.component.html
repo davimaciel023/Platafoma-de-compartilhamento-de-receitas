@@ -1,4 +1,4 @@
-<div class="editar">
+<div class="cadastro">
   <h2>Cadastrar Receita</h2>
   <form [formGroup]="form" (ngSubmit)="salvar()">
     <label for="nome">Nome da Receita</label>
@@ -50,7 +50,7 @@
     </div>
 
     <div class="form-actions">
-      <button type="submit" class="save">Salvar</button>
+      <button type="submit" class="save" [disabled]="form.invalid">Salvar</button>
       <button type="button" class="cancel" (click)="cancelar()">Cancelar</button>
     </div>
   </form>

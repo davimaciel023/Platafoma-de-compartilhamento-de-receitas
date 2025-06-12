@@ -133,3 +133,22 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .editar {
+    padding: 1.5rem;
+
+    form {
+      gap: 1.2rem;
+
+      .form-actions {
+        flex-direction: column;
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+

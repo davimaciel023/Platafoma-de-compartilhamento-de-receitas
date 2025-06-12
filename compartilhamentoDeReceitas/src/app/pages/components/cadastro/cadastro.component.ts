@@ -23,8 +23,8 @@ export class CadastroComponent {
       nome: ['', Validators.required],
       ingredientes: ['', Validators.required],
       modoPreparo: ['', Validators.required],
-      tempoPreparo: ['', Validators.required],
-      categoria: ['', [Validators.required, Validators.pattern(/^(\d{1,2}\s?(h|hora(s)?))?(\s?e\s?)?(\d{1,2}\s?(min|minuto(s)?))?$/i)]],
+      tempoPreparo: ['', [Validators.required, Validators.pattern(/^(\d{1,2}\s?(h|hora(s)?))?(\s?e\s?)?(\d{1,2}\s?(min|minuto(s)?))?$/i)]],
+      categoria: [''],
       imagem: ['']
     })
   }
