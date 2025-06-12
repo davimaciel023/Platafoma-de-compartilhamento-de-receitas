@@ -1,5 +1,5 @@
 export interface Receita {
-  id?: number;
+  id?: string;
   nome: string;
   ingredientes: string;
   modoPreparo: string;
