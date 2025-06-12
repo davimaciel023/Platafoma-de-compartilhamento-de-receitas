@@ -7,7 +7,7 @@ import { EditarComponent } from './pages/editar/editar.component';
 export const routes: Routes = [
     {
       path: '',
-      redirectTo: 'cadastroReceita',
+      redirectTo: 'listagem',
       pathMatch: 'full'
     },
     {
