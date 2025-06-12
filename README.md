@@ -48,6 +48,7 @@ npm install -g @angular/cli
 git clone https://github.com/davimaciel023/Platafoma-de-compartilhamento-de-receitas.git
 cd Platafoma-de-compartilhamento-de-receitas
 cd compartilhamentoDeReceitas
+code .
 ```
 
 #### 2. Instalar as dependências
